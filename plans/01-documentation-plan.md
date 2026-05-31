@@ -10,18 +10,19 @@ Create beginner-friendly documentation for new Rosetta DBT Studio users. The out
 
 ---
 
-## Output Structure
+## Structure
 
-```
+
 doc-agon/
 ├── plans/
-│   └── 01-documentation-plan.md        ← this file
-├── images/                              ← screenshots (added per feature)
-├── videos/                              ← video links and embeds
+│   └── 01-documentation-plan.md        ← 
+├── images/                              ← screenshots 
+├── videos/                              ← video link
 │
 ├── overview.md                          ← what the app is and why it exists
 ├── installation-guide.md                ← how to download and install
 ├── getting-started.md                   ← first launch, projects, connections
+├── ai-integration-guide.md              ← setting up your ai agent, and using it
 │
 ├── screens/                             ← one doc per screen in the app
 │   ├── projects.md                      ← Projects screen
@@ -39,7 +40,7 @@ doc-agon/
 │   └── model-generation.md              ← Staging, Enhanced, Business layers
 │
 └── faq.md                               ← common questions and answers
-```
+
 
 ---
 
@@ -48,8 +49,9 @@ doc-agon/
 | File | Status | Notes |
 |------|--------|-------|
 | overview.md | ✅ Done | |
-| installation-guide.md | ⚠️ In Progress | |
-| getting-started.md | ⚠️ In Progress | |
+| installation-guide.md | ✅ Done | |
+| ai-integration-guide.md | ✅ Done| |
+| getting-started.md | ✅ Done | |
 | screens/projects.md | ❌ Not started | |
 | screens/dbt-studio.md | ❌ Not started | |
 | screens/sql-editor.md | ❌ Not started | |
