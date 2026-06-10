@@ -4,7 +4,7 @@
 
 When you open Rosetta DBT Studio for the first time you will land on the **Projects** screen. This is your home base — where you create, open, and manage all your dbt™ projects.
 
-![Projects screen](images/project-empty.png)
+![Projects screen](../images/project-empty.png)
 
 ---
 
@@ -30,7 +30,7 @@ If you are new to Rosetta DBT Studio, the best way to get familiar with the app 
 1. Click **Get Started** on the Projects screen
 2. Click **Create Example Project**
 
-![Get Started dialog](images/get-started-dialog.png)
+![Get Started dialog](../images/get-started-dialog.png)
 
 3. The app automatically clones the example repository and sets up a DuckDB database
 4. You land on the project workspace — you're ready to go
@@ -47,7 +47,7 @@ The example project includes:
 
 Once inside a project you will see the main workspace:
 
-![Workspace overview](images/workspace-overview.png)
+![Workspace overview](../images/workspace-overview.png)
 
 - **Left sidebar** — file explorer showing all your project files and folders
 - **Center editor** — where you view and edit your SQL models and YAML files
@@ -60,7 +60,7 @@ When you open a SQL model file in the editor you will see two additional buttons
 
 **AI button** — gives you AI-powered assistance for the current model file:
 
-![AI button dropdown](images/ai-button-dropdown.png)
+![AI button dropdown](../images/ai-button-dropdown.png)
 
 - **Suggest Basic Transformations** — AI analyzes your model and suggests cleaning and transformation improvements
 - **Generate Analytics** — AI generates analytical queries based on your data
@@ -70,7 +70,7 @@ When you open a SQL model file in the editor you will see two additional buttons
 
 **Model button** — run or test just the current model instead of the entire project:
 
-![Model button dropdown](images/model-button-dropdown.png)
+![Model button dropdown](../images/model-button-dropdown.png)
 
 - **Run** — run just this model
 - **Run model+ (Downstream)** — run this model and everything that depends on it
@@ -103,7 +103,7 @@ The left sidebar gives you access to every part of the app:
 
 This is the core workflow of Rosetta DBT Studio. You will transform your raw data through three layers — Raw, Staging, and Enhanced — using the **Project** button in the top right.
 
-![Project dropdown](images/project-dropdown.png)
+![Project dropdown](../images/project-dropdown.png)
 
 ### Step 1 — Generate the Raw Layer
 
@@ -115,7 +115,7 @@ The Raw Layer scans your database and creates YAML files that register your tabl
 
 Rosetta scans your database and creates one YAML file per table inside `models/raw/`. Each file describes the table structure — column names, data types, and basic quality tests.
 
-![Models after Raw Layer](images/models-after-raw.png)
+![Models after Raw Layer](../images/models-after-raw.png)
 
 > **What is a YAML source file?** It is a description of your raw table that tells dbt™ "this table exists in your database and here are its columns." Once registered, your SQL models can reference it using `{{ source('main', 'table_name') }}`.
 
@@ -130,11 +130,11 @@ The Staging Layer takes your raw tables and generates SQL model files that clean
 3. Select all YAML files by checking **Select All YAML Files**
 4. Click **Generate Staging Models**
 
-![Staging Layer dialog](images/staging-layer-dialog.png)
+![Staging Layer dialog](../images/staging-layer-dialog.png)
 
 Rosetta generates SQL files inside `models/staging/`. Each file contains a SELECT statement that reads from your raw table and outputs a clean version.
 
-![Staging Layer generated](images/staging-layer-generated.png)
+![Staging Layer generated](../images/staging-layer-generated.png)
 
 > **Why do staging models exist?** In real projects raw data is often messy — inconsistent formatting, missing values, duplicate rows. The staging layer is where you clean all of that up before doing anything else. You can edit the generated SQL files to add your own cleaning logic.
 
@@ -149,7 +149,7 @@ Now that your models exist as SQL files you need to execute them against your da
 
 dbt™ executes all your SQL model files against the database in the correct order and creates the clean staging views.
 
-![dbt Run success](images/dbt-run-success.png)
+![dbt Run success](../images/dbt-run-success.png)
 
 A successful run shows `Completed successfully` in the terminal with a summary:
 
@@ -178,7 +178,7 @@ Rosetta generates SQL files inside `models/enhanced/`.
 
 After editing the files click **Run** again to execute the enhanced models.
 
-![Enhanced Layer success](images/enhanced-layer-success.png)
+![Enhanced Layer success](../images/enhanced-layer-success.png)
 
 ---
 
@@ -186,7 +186,7 @@ After editing the files click **Run** again to execute the enhanced models.
 
 After running your models click the **Lineage** tab in the bottom panel to see a visual map of how your models connect and depend on each other.
 
-![Lineage view](images/lineage-view.png)
+![Lineage view](../images/lineage-view.png)
 
 dbt™ uses this dependency map to automatically determine the correct execution order when you click Run.
 

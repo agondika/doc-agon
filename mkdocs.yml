@@ -1,0 +1,73 @@
+site_name: Rosetta DBT Studio Documentation
+site_description: Official documentation for Rosetta DBT Studio
+site_author: AdaptiveScale
+
+docs_dir: docs
+
+theme:
+  name: material
+  logo: images/dbt-studio-logo.png
+  favicon: images/dbt-studio-logo.png
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+
+nav:
+  - Home: overview.md
+  - Getting Started:
+    - Installation: installation-guide.md
+    - Getting Started: getting-started.md
+    - AI Integration: ai-integration-guide.md
+  - Features:
+    - Model Generation: features/model-generation.md
+    - DBT Commands: features/dbt-commands.md
+    - AI Assistant: features/ai-assistant.md
+    - Git Integration: features/git-integration.md
+  - Screens:
+    - Projects: screens/projects.md
+    - DBT Studio: screens/dbt-studio.md
+    - SQL Editor: screens/sql-editor.md
+    - Notebooks: screens/notebooks.md
+    - Connections: screens/connections.md
+    - Object Explorer: screens/cloud-explorer.md
+    - DataLake: screens/datalake.md
+  - FAQ: faq.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rosettadb/dbt-studio

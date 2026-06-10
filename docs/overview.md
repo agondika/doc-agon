@@ -1,6 +1,6 @@
 # Rosetta DBT Studio
 
-![Rosetta DBT Studio](images/dbt-logo.png)
+![Rosetta DBT Studio](../images/dbt-logo.png)
 
 ## Overview
 
