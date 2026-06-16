@@ -6,32 +6,37 @@ docs_dir: docs
 
 theme:
   name: material
-  logo: images/dbt-studio-logo.png
+  logo: images/dbt-logo.png
   favicon: images/dbt-studio-logo.png
+  font:
+    text: Inter
+    code: JetBrains Mono
   palette:
-    - scheme: default
-      primary: deep orange
-      accent: orange
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
     - scheme: slate
       primary: deep orange
       accent: orange
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+    - scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.indexes
     - search.highlight
     - search.suggest
+    - search.share
     - toc.follow
+    - content.code.copy
 
 nav:
-  - Home: overview.md
+  - Home: index.md
   - Getting Started:
     - Installation: installation-guide.md
     - Getting Started: getting-started.md
@@ -49,6 +54,7 @@ nav:
     - Connections: screens/connections.md
     - Object Explorer: screens/cloud-explorer.md
     - DataLake: screens/datalake.md
+    - Settings: screens/settings.md
   - FAQ: faq.md
 
 markdown_extensions:
