@@ -6,11 +6,8 @@ docs_dir: docs
 
 theme:
   name: material
-  logo: images/dbt-logo.png
-  favicon: images/dbt-studio-logo.png
-  font:
-    text: Inter
-    code: JetBrains Mono
+  logo: images/dbt-logo-new.png
+  favicon: images/dbt-logo-new.png
   palette:
     - scheme: slate
       primary: deep orange
@@ -28,15 +25,14 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
-    - navigation.indexes
+    - navigation.tracking
+    - toc.follow
     - search.highlight
     - search.suggest
-    - search.share
-    - toc.follow
     - content.code.copy
 
 nav:
-  - Home: index.md
+  - Home: overview.md
   - Getting Started:
     - Installation: installation-guide.md
     - Getting Started: getting-started.md
@@ -54,7 +50,6 @@ nav:
     - Connections: screens/connections.md
     - Object Explorer: screens/cloud-explorer.md
     - DataLake: screens/datalake.md
-    - Settings: screens/settings.md
   - FAQ: faq.md
 
 markdown_extensions:
