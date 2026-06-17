@@ -24,7 +24,7 @@ Rosetta DBT Studio includes built-in AI assistance to help you generate dbt™ m
 1. Click **Settings** at the bottom of the left sidebar
 2. Click **AI Settings**
 
-![AI Settings empty](../images/ai-settings-empty.png)
+![AI Settings empty](images/ai-settings-empty.png)
 
 ---
 
@@ -37,7 +37,7 @@ Rosetta DBT Studio includes built-in AI assistance to help you generate dbt™ m
    - **API Key** — paste your key here
 3. Click **Test Connection** to verify your key works
 
-![Add AI Provider](../images/ai-add-provider.png)
+![Add AI Provider](images/ai-add-provider.png)
 
 4. Click **Create Provider**
 
@@ -50,11 +50,11 @@ Rosetta DBT Studio includes built-in AI assistance to help you generate dbt™ m
 3. Save your changes
 4. Click **Set Active**
 
-![AI model selected](../images/ai-model-selected.png)
+![AI model selected](images/ai-model-selected.png)
 
 Your provider is now active and ready to use:
 
-![AI provider active](../images/ai-provider-active.png)
+![AI provider active](images/ai-provider-active.png)
 
 ---
 
@@ -79,7 +79,7 @@ ollama pull llama3
 
 Once your provider is active, AI features are available in the DBT Studio editor. Open any SQL model file and click the **AI** button at the top right of the editor.
 
-![AI button dropdown](../images/ai-button-dropdown.png)
+![AI button dropdown](images/ai-button-dropdown.png)
 
 For full details on using AI features see [AI Assistant](features/ai-assistant.md).
 
