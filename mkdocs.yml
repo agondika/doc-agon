@@ -32,7 +32,7 @@ theme:
     - content.code.copy
 
 nav:
-  - Home: overview.md
+  - Home: index.md
   - Getting Started:
     - Installation: installation-guide.md
     - Getting Started: getting-started.md
