@@ -1,8 +1,8 @@
-# Rosetta DBT Studio
+# Rosetta DBT Studiossss
 
 ![Rosetta DBT Studio](images/dbt-logo.png)
 
-## Overviews
+## Overview
 
 ### What Is Rosetta DBT Studio?
 
