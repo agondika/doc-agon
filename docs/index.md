@@ -2,7 +2,7 @@
 
 ![Rosetta DBT Studio](images/dbt-logo.png)
 
-## Overview
+## Overviews
 
 ### What Is Rosetta DBT Studio?
 
