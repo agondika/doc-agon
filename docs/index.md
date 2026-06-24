@@ -1,4 +1,4 @@
-# Rosetta DBT Studiossss
+# Rosetta DBT Studio
 
 ![Rosetta DBT Studio](images/dbt-logo.png)
 
