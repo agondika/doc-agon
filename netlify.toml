@@ -1,12 +1,8 @@
-[
-build
-]
-  command = "mkdocs build"
+[build]
+  command = "pip install -r requirements.txt && mkdocs build"
   publish = "site"
 
-[
-build.environment
-]
+[build.environment]
   PYTHON_VERSION = "3.12"
 
-
+  
