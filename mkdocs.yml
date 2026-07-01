@@ -50,6 +50,8 @@ nav:
     - Connections: screens/connections.md
     - Object Explorer: screens/cloud-explorer.md
     - DataLake: screens/datalake.md
+    - Flows: screens/flows.md
+    - Settings: screens/settings.md
   - FAQ: faq.md
 
 markdown_extensions:

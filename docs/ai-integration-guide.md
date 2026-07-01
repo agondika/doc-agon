@@ -14,6 +14,8 @@ Rosetta DBT Studio includes built-in AI assistance to help you generate dbt™ m
 | **OpenAI** | [platform.openai.com](https://platform.openai.com) |
 | **Anthropic** | [console.anthropic.com](https://console.anthropic.com) |
 | **Ollama** | No API key required |
+| **OpenAI Compatible** | Optional — depends on the service |
+| **LM Studio** | No API key required |
 
 ---
 
@@ -75,6 +77,39 @@ ollama pull llama3
 
 ---
 
+## OpenAI Compatible Setup
+
+Use this provider to connect any AI service that supports the OpenAI API format. Instead of choosing a built-in provider, you supply the service's address yourself — which lets you connect services like Groq, Together, or OpenRouter, or a model hosted inside your own company.
+
+1. Get the **Base URL** (and an API key, if the service requires one) from your AI service
+2. In Rosetta DBT Studio go to **Settings** → **AI Settings**
+3. Click **Add Provider** and select **OpenAI Compatible**
+4. Fill in the fields:
+   - **Provider Name** — a label for your reference
+   - **Base URL** — the service's API endpoint (usually ends in `/v1`)
+   - **API Key** — optional; enter one only if your service requires it
+5. Click **Test Connection**
+6. Select your model and click **Set Active**
+
+---
+
+## LM Studio Setup
+
+LM Studio runs open-source models on your own computer, with no API key required. It works the same way as Ollama.
+
+1. Download and install LM Studio from [lmstudio.ai](https://lmstudio.ai)
+2. In LM Studio, download a model from the **Discover** tab
+3. Open the **Local Server** tab, select your model, and click **Start Server** (it runs on port `1234` by default)
+4. In Rosetta DBT Studio go to **Settings** → **AI Settings**
+5. Click **Add Provider** and select **LM Studio**
+6. Leave **Base URL** empty to use the default local server — only fill it in if you changed the port or are using a cloud-hosted deployment
+7. Click **Test Connection**
+8. Select your model and click **Set Active**
+
+> **Note:** For a cloud-hosted LM Studio deployment, set the remote **Base URL** and add an **API Key** (optional field).
+
+---
+
 ## Accessing AI Features
 
 Once your provider is active, AI features are available in the DBT Studio editor. Open any SQL model file and click the **AI** button at the top right of the editor.
@@ -98,3 +133,6 @@ For full details on using AI features see [AI Assistant](features/ai-assistant.m
 
 **Ollama not connecting**
 → Make sure the Ollama app is running before testing the connection.
+
+**OpenAI Compatible or LM Studio not connecting**
+→ Make sure the service (or LM Studio's local server) is running, and that the Base URL is correct — leave it empty to use LM Studio's default, or include the `/v1` path if your service requires it.
